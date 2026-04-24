@@ -87,7 +87,7 @@ export default function AboutPage() {
                   rel="noopener noreferrer"
                   className="text-[#14532d] dark:text-[#25844b] hover:underline font-medium"
                 >
-                  @rknastenka
+                  @itsmonuraz
                 </a>
               </p>
             </div>
