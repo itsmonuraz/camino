@@ -74,7 +74,7 @@ export default function AboutPage() {
             <br/>
             <br/>
             If you have any questions, suggestions, or feedback, feel free to reach out to me at {' '}
-           <a href="mailto:caminotracker@gmail.com" className="text-[#14532d] dark:text-[#25844b] hover:underline">caminotracker@gmail.com</a>.
+           <a href="mailto:itsmonuraz@gmail.com" className="text-[#14532d] dark:text-[#25844b] hover:underline">itsmonuraz@gmail.com</a>.
 
             </p>
 
@@ -82,7 +82,7 @@ export default function AboutPage() {
               <p className="text-sm">
                
                 <a 
-                  href="https://github.com/rknastenka" 
+                  href="https://github.com/itsmonuraz" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-[#14532d] dark:text-[#25844b] hover:underline font-medium"
