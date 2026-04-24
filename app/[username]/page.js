@@ -34,7 +34,7 @@ const demoUserData = {
 };
 
 // Generate date range for entire year (365 days)
-const generateYearDateRange = (year = 2025) => {
+const generateYearDateRange = (year = 2026) => {
   const dates = [];
   const monthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
   
@@ -76,7 +76,7 @@ export default function UserProfilePage({ usernameFromHash = null }) {
   const { getHabitsForMonth, updateHabitName, addHabitToMonth, deleteHabitFromMonth, isCompleted: isHabitCompletedInContext, productiveHours, updateProductiveHours, getProductiveHours } = useHabits();
   
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const dateRange = generateYearDateRange(2025);
+  const dateRange = generateYearDateRange(2026);
   
   // State for editing habit names - format: "monthKey-habitIndex"
   const [editingHabit, setEditingHabit] = useState(null);
@@ -300,7 +300,7 @@ export default function UserProfilePage({ usernameFromHash = null }) {
         <div className="bg-[#fffffe] dark:bg-[#262828] rounded-xl border border-[rgba(94,82,64,0.12)] dark:border-[rgba(119,124,124,0.2)] shadow-md p-4 w-full">
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-lg font-bold text-[#13343b] dark:text-[#f5f5f5]">
-              Full Year 2025
+              Full Year 2026
             </h2>
           </div>
           
