@@ -34,7 +34,7 @@ const demoUserData = {
 };
 
 // Generate date range for entire year (365 days)
-const generateYearDateRange = (year = 2025) => {
+const generateYearDateRange = (year = new Date().getFullYear()) => {
   const dates = [];
   const monthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
   
@@ -76,7 +76,7 @@ export default function UserProfilePage({ usernameFromHash = null }) {
   const { getHabitsForMonth, updateHabitName, addHabitToMonth, deleteHabitFromMonth, isCompleted: isHabitCompletedInContext, productiveHours, updateProductiveHours, getProductiveHours } = useHabits();
   
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const dateRange = generateYearDateRange(2025);
+  const dateRange = generateYearDateRange();
   
   // State for editing habit names - format: "monthKey-habitIndex"
   const [editingHabit, setEditingHabit] = useState(null);
