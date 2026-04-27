@@ -536,7 +536,8 @@ export default function SocialHabitTracker() {
               {user.habits.map((habit, habitIndex) => (
                 <tr key={habitIndex}>
                   <td 
-                    className="text-left text-sm py-1 px-2 border-b border-[rgba(94,82,64,0.12)] dark:border-[rgba(119,124,124,0.15)] text-[#13343b] dark:text-[#f5f5f5] sticky left-0 bg-[#fffffe] dark:bg-[#262828] z-20 min-w-[200px] whitespace-nowrap"
+                    className="text-left text-sm py-1 px-2 border-b border-[rgba(94,82,64,0.12)] dark:border-[rgba(119,124,124,0.15)] text-[#13343b] dark:text-[#f5f5f5] sticky left-0 bg-[#fffffe] dark:bg-[#262828] z-20 min-w-[200px] max-w-[200px]"
+                
                   >
                     {editingHabitIndex === habitIndex ? (
                       <input
@@ -552,7 +553,7 @@ export default function SocialHabitTracker() {
                       <div
                         onClick={() => isClient && handleHabitNameClick(habitIndex, habit)}
                         onContextMenu={(e) => isClient && handleContextMenu(e, habitIndex, habit)}
-                        className={`flex-1 ${isClient && !authUser || isViewingOthers ? 'cursor-default' : isClient ? 'cursor-text' : ''} rounded px-1 py-0.5`}
+                        className={`flex-1 overflow-x-auto whitespace-nowrap ${isClient && !authUser || isViewingOthers ? 'cursor-default' : isClient ? 'cursor-text' : ''} rounded px-1 py-0.5`}
                       >
                         {habit}
                       </div>
