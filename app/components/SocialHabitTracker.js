@@ -536,7 +536,7 @@ export default function SocialHabitTracker() {
               {user.habits.map((habit, habitIndex) => (
                 <tr key={habitIndex}>
                   <td 
-                    className="text-left text-sm py-1 px-2 border-b border-[rgba(94,82,64,0.12)] dark:border-[rgba(119,124,124,0.15)] text-[#13343b] dark:text-[#f5f5f5] sticky left-0 bg-[#fffffe] dark:bg-[#262828] z-20 min-w-[200px] max-w-[200px]"
+                    className="text-left text-sm py-1 px-2 border-b border-[rgba(94,82,64,0.12)] dark:border-[rgba(119,124,124,0.15)] text-[#13343b] dark:text-[#f5f5f5] sticky left-0 bg-[#fffffe] dark:bg-[#262828] z-20 min-w-[200px] whitespace-nowrap"
                   >
                     {editingHabitIndex === habitIndex ? (
                       <input
